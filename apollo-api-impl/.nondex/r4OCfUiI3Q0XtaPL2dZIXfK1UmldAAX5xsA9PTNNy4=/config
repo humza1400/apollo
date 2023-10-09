@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexJarDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexExecid=r4OCfUiI3Q0XtaPL2dZIXfK1UmldAAX5xsA9PTNNy4=
+nondexLogging=CONFIG
+test=

@@ -1,0 +1,196 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] Inspecting build with total of 1 modules...
+[[1;34mINFO[m] Installing Nexus Staging features:
+[[1;34mINFO[m]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36mcom.spotify:apollo-api-impl[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding Spotify Apollo API Implementations 1.20.5-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mnondex-maven-plugin:2.1.1:nondex[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mapollo-api-impl[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce)[m @ [36mapollo-api-impl[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mlicense-maven-plugin:1.9:check-file-header[m [1m(check-file-header)[m @ [36mapollo-api-impl[0;1m ---[m
+[[1;34mINFO[m] Will search files to update from root /home/future/Desktop/apollo/apollo-api-impl/src/main/java
+[[1;34mINFO[m] Will search files to update from root /home/future/Desktop/apollo/apollo-api-impl/src/test/java
+[[1;34mINFO[m] Scan 73 files header done in 31.66ms.
+[[1;34mINFO[m] All files are up-to-date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mapollo-api-impl[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mapollo-api-impl[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mapollo-api-impl[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mapollo-api-impl[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mnondex-maven-plugin:2.1.1:nondex[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mapollo-api-impl[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mnondex-maven-plugin:2.1.1:nondex[m [1m(default-cli)[m @ [36mapollo-api-impl[0;1m ---[m
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_FKAW3zcEWB4zmjURvv81AzDDe78B+s9JNPySYAfBJfo=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.spotify.apollo.route.[1mMiddlewaresTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s - in com.spotify.apollo.route.[1mMiddlewaresTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexJarDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexExecid=CRpvIcmSzb+AeIf0RbYILlGPr58F3BjNxGPL0J68Ko=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.spotify.apollo.route.[1mMiddlewaresTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s - in com.spotify.apollo.route.[1mMiddlewaresTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexJarDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexExecid=0Tbx91k8MvUF5K9Pbmp+BylGHbUyYKvzTrkszvaXAEs=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.spotify.apollo.route.[1mMiddlewaresTest[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 0.271 s[1;31m <<< FAILURE![m - in com.spotify.apollo.route.[1mMiddlewaresTest[m
+[[1;31mERROR[m] asShouldSerializeObjectAsJson  Time elapsed: 0.269 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string equal to "{\"theString\":\"hi\",\"theInteger\":42}" compressing white space
+     but: was "{\"theInteger\":42,\"theString\":\"hi\"}"
+	at com.spotify.apollo.route.MiddlewaresTest.asShouldSerializeObjectAsJson(MiddlewaresTest.java:148)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  MiddlewaresTest.asShouldSerializeObjectAsJson:148 
+Expected: a string equal to "{\"theString\":\"hi\",\"theInteger\":42}" compressing white space
+     but: was "{\"theInteger\":42,\"theString\":\"hi\"}"[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 1, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+INFO: Surefire failed when running tests for 0Tbx91k8MvUF5K9Pbmp+BylGHbUyYKvzTrkszvaXAEs=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexJarDir=/home/future/Desktop/apollo/apollo-api-impl/.nondex
+nondexExecid=QKQuacEAz5YGiqiSpOxoq0iHjCEj03FDGGxNoVrA82s=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.spotify.apollo.route.[1mMiddlewaresTest[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 0.304 s[1;31m <<< FAILURE![m - in com.spotify.apollo.route.[1mMiddlewaresTest[m
+[[1;31mERROR[m] asShouldSerializeObjectAsJson  Time elapsed: 0.3 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string equal to "{\"theString\":\"hi\",\"theInteger\":42}" compressing white space
+     but: was "{\"theInteger\":42,\"theString\":\"hi\"}"
+	at com.spotify.apollo.route.MiddlewaresTest.asShouldSerializeObjectAsJson(MiddlewaresTest.java:148)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  MiddlewaresTest.asShouldSerializeObjectAsJson:148 
+Expected: a string equal to "{\"theString\":\"hi\",\"theInteger\":42}" compressing white space
+     but: was "{\"theInteger\":42,\"theString\":\"hi\"}"[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 1, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+INFO: Surefire failed when running tests for QKQuacEAz5YGiqiSpOxoq0iHjCEj03FDGGxNoVrA82s=
+[[1;34mINFO[m] NonDex SUMMARY:
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/future/Desktop/apollo/apollo-api-impl/.nondex" -DnondexJarDir="/home/future/Desktop/apollo/apollo-api-impl/.nondex" -DnondexExecid=CRpvIcmSzb+AeIf0RbYILlGPr58F3BjNxGPL0J68Ko= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/future/Desktop/apollo/apollo-api-impl/.nondex" -DnondexJarDir="/home/future/Desktop/apollo/apollo-api-impl/.nondex" -DnondexExecid=0Tbx91k8MvUF5K9Pbmp+BylGHbUyYKvzTrkszvaXAEs= -DnondexLogging=CONFIG
+[[1;33mWARNING[m] com.spotify.apollo.route.MiddlewaresTest#asShouldSerializeObjectAsJson
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/future/Desktop/apollo/apollo-api-impl/.nondex" -DnondexJarDir="/home/future/Desktop/apollo/apollo-api-impl/.nondex" -DnondexExecid=QKQuacEAz5YGiqiSpOxoq0iHjCEj03FDGGxNoVrA82s= -DnondexLogging=CONFIG
+[[1;33mWARNING[m] com.spotify.apollo.route.MiddlewaresTest#asShouldSerializeObjectAsJson
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] All tests pass without NonDex shuffling
+[[1;34mINFO[m] ####################
+[[1;34mINFO[m] Across all seeds:
+[[1;34mINFO[m] com.spotify.apollo.route.MiddlewaresTest#asShouldSerializeObjectAsJson
+[[1;34mINFO[m] Test results can be found at: 
+[[1;34mINFO[m] file:///home/future/Desktop/apollo/apollo-api-impl/.nondex/CRpvIcmSzb+AeIf0RbYILlGPr58F3BjNxGPL0J68Ko=/test_results.html
+[[1;34mINFO[m] [NonDex] The id of this run is: CRpvIcmSzb+AeIf0RbYILlGPr58F3BjNxGPL0J68Ko=
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  4.608 s
+[[1;34mINFO[m] Finished at: 2023-10-09T18:05:37-04:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32medu.illinois:nondex-maven-plugin:2.1.1:nondex[m [1m(default-cli)[m on project [36mapollo-api-impl[m: [1;31mUnable to execute mojo[m: There are test failures.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] Please refer to /home/future/Desktop/apollo/apollo-api-impl/.nondex/0Tbx91k8MvUF5K9Pbmp+BylGHbUyYKvzTrkszvaXAEs= for the individual test results.
+[[1;31mERROR[m] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

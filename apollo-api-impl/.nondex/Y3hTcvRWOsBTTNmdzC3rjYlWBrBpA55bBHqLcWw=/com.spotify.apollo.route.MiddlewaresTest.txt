@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.spotify.apollo.route.MiddlewaresTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.275 s <<< FAILURE! - in com.spotify.apollo.route.MiddlewaresTest
-asShouldSerializeObjectAsJson  Time elapsed: 0.272 s  <<< ERROR!
-java.lang.NumberFormatException: For input string: ""hi""
-	at com.spotify.apollo.route.MiddlewaresTest.asShouldSerializeObjectAsJson(MiddlewaresTest.java:152)
-

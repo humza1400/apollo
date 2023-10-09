@@ -43,8 +43,6 @@ import java.util.concurrent.ExecutionException;
 
 import okio.ByteString;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import static com.spotify.apollo.Status.CREATED;
 import static com.spotify.apollo.Status.NOT_MODIFIED;
 import static com.spotify.apollo.Status.NO_CONTENT;
@@ -137,27 +135,17 @@ public class MiddlewaresTest {
 
   @Test
   public void asShouldSerializeObjectAsJson() throws Exception {
-  class TestData {
-  public String theString = "hi";
-  public int theInteger = 42;
-  }
+    class TestData {
+      public String theString = "hi";
+      public int theInteger = 42;
+    }
 
-  TestData testData = new TestData();
+    serializationFuture.complete(new TestData());
 
-  serializationFuture.complete(testData);
-
-  //noinspection ConstantConditions
-  String json =
-  getResult(Middlewares.autoSerialize(serializationDelegate)).payload().get().utf8();
-
-  ObjectMapper mapper = new ObjectMapper(); // Use Jackson's ObjectMapper to parse JSON
-  JsonNode jsonNode = mapper.readTree(json); // Parse the JSON string into a JsonNode
-
-  String actualString = jsonNode.get("theString").asText();
-  int actualInteger = jsonNode.get("theInteger").asInt();
-
-  assertThat(actualString, is(testData.theString));
-  assertThat(actualInteger, is(testData.theInteger));
+    //noinspection ConstantConditions
+    String json =
+        getResult(Middlewares.autoSerialize(serializationDelegate)).payload().get().utf8();
+    assertThat(json, equalToIgnoringWhiteSpace("{\"theString\":\"hi\",\"theInteger\":42}"));
   }
 
   @Test

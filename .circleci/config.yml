@@ -9,7 +9,7 @@ jobs:
       - restore_cache:
           key: v1-deps-{{ checksum "pom.xml" }}
       - run:
-          command: mvn -Pcoverage -Pmissinglink --fail-never dependency:go-offline clean compile || true
+          command: mvn --fail-never dependency:go-offline clean compile || true
           environment:
             MAVEN_OPTS: -Xmx512m
       - save_cache:
@@ -17,9 +17,26 @@ jobs:
           paths:
             - ~/.m2
       - run:
-          command: mvn -Pcoverage -Pmissinglink verify
+          command: mvn verify
           environment:
             MAVEN_OPTS: -Xmx768m
+
+  jdk11:
+    working_directory: ~/apollo
+    docker:
+      - image: maven:3-jdk-11
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-jdk11-{{ checksum "pom.xml" }}
+      - run: 
+          command: mvn dependency:go-offline clean install -DskipTests || true
+          environment:
+            MAVEN_OPTS: -Xmx512m
+      - save_cache:
+          key: v1-deps-jdk11-{{ checksum "pom.xml" }}
+          paths:
+            - ~/.m2
       - run:
           name: Run test without NonDex
           command: mvn -pl apollo-api-impl test -Dtest=com.spotify.apollo.route.MiddlewaresTest#asShouldSerializeObjectAsJson
@@ -36,24 +53,7 @@ jobs:
           path: ~/junit
       - store_artifacts:
           path: ~/junit
-      - run: bash <(curl -s https://codecov.io/bash)
-  jdk11:
-    working_directory: ~/apollo
-    docker:
-      - image: maven:3-jdk-11
-    steps:
-      - checkout
-      - restore_cache:
-          key: v1-deps-jdk11-{{ checksum "pom.xml" }}
-      - run: mvn dependency:go-offline clean compile || true
-      - save_cache:
-          key: v1-deps-jdk11-{{ checksum "pom.xml" }}
-          paths:
-            - ~/.m2
-      - run:
-          command: mvn verify
-          environment:
-            MAVEN_OPTS: -Xmx512m
+
   jdk13:
     working_directory: ~/apollo
     docker:

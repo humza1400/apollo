@@ -21,6 +21,12 @@ jobs:
           environment:
             MAVEN_OPTS: -Xmx768m
       - run:
+          name: Run test without NonDex
+          command: mvn -pl apollo-api-impl test -Dtest=com.spotify.apollo.route.MiddlewaresTest#asShouldSerializeObjectAsJson
+      - run:
+          name: Run test with NonDex
+          command: mvn -pl apollo-api-impl edu.illinois:nondex-maven-plugin:2.1.1:nondex -Dtest=com.spotify.apollo.route.MiddlewaresTest#asShouldSerializeObjectAsJson
+      - run:
           name: Save test results
           command: |
             mkdir -p ~/junit/
